@@ -1,0 +1,5 @@
+{
+  "name": "@sa/express-dto-validation",
+  "version": "0.0.1",
+  "exports": "./index.ts"
+}
