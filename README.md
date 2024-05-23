@@ -1,10 +1,20 @@
-+ /**
-+  * This module contains functions to search the database.
-+  * @module
-+  */
-  
-  /** The options bag to pass to the {@link search} method. */
-  export interface SearchOptions {}
-  
-  /** Search the database with the given query. */
-  export function search(query: string, options?: SearchOptions): string[];
+/**
+
+* @module
+*
+* This function use as a route label middleware and this function takes AnyZodSchema
+*
+
++
+  * ```ts
++
+  * import { validateDto } from "@sa/express-dto-validation";
+
++
+*this function use as route middleware before request handler middleware
++
+  * (middleware , validateDto(AnyZodSchema) , middleware)=> {}
++
+  * ```
+
+*/
