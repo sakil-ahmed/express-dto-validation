@@ -31,5 +31,5 @@
         "email": "Required",
         "password": "Required"
     }
-}
+  }
 */

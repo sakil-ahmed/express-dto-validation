@@ -1,11 +1,21 @@
 import {Request, Response, NextFunction} from "express";
 import {AnyZodObject, ZodError} from 'zod'
 
-export const testFunction = () => {
-    console.log('Jsr test package')
-}
+/**
+ * Validate your express js app request body as you need just you can pass a zod schema .
+ *
+ +  * @param accept AnyZodSchema.
+ +  * @returns error object by fields.
+ + * error Object
+ {
+ "success": false,
+ "error": {
+ "email": "Required",
+ "password": "Required"
+ }
+ }
+ */
 
-/** this function use as a route label middleware  */
 export const validateDto = (schema: AnyZodObject) => async (req: Request, res: Response, next: NextFunction) => {
     try {
         schema.parse(req.body);
