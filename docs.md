@@ -1,11 +1,20 @@
 /**
+
 * @module
 *
-* This module contains functions to search the database.
+* This function use as a route label middleware and this function takes AnyZodSchema
 *
-+  * ```ts
-+  * import { search } from "@luca/search";
-+  *
-+  * search("Alan") // ["Alan Turing", "Alan Kay", ...]
-+  * ```
+
++
+    * ```ts
++
+    * import { validateDto } from "@sa/express-dto-validation";
+
++
+    *this function use as route middleware before request handler middleware
++
+    * (middleware , validateDto(AnyZodSchema) , middleware)=> {}
++
+    * ```
+
 */
